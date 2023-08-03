@@ -1,0 +1,52 @@
+div.free{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: rgb(238, 237, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 60px;
+    >div{
+        padding: 15px;
+        margin: 0 !important;
+        width: 22%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2{
+            color: rgb(85, 85, 85);
+        }
+        p{     
+          color: rgb(85, 85, 85);
+        }
+        button{
+            margin-top: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            user-select: none;
+            vertical-align: middle;
+            appearance: none;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: bold;
+            font-family: SansOri, SansOriFallback, sans-serif;
+            text-transform: uppercase;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            box-shadow: none;
+            color: rgb(51, 51, 51);
+            border: 1px solid rgb(51, 51, 51);
+            border-radius: 25px;
+            line-height: 1.35;
+            padding: 12px 23px;
+            align-self: center;
+            height: 45px;
+            &:hover{
+                background-color:rgb(229, 228, 228) ;
+            }
+        }
+    }
+}

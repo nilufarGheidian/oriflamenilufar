@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: sans;
+  src: url("../../fonts/OriflameSans20-Regular.eot");
+  src: url("../../fonts/OriflameSans20-Regular.ttf");
+  src: url("../../fonts/OriflameSans20-Regular.woff");
+  src: url("../../fonts/OriflameSans20-Regular.woff2"); }
+
+div.wrapper {
+  width: 100%;
+  background-color: #fff; }
+
+div.wrapper > div.cover {
+  position: fixed;
+  width: calc(100% - 300px);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8888;
+  right: -100%;
+  top: 0;
+  opacity: 0; }
+
+div.wrapper > div.cover.activeCover {
+  right: 0;
+  opacity: 1; }

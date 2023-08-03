@@ -1,0 +1,271 @@
+div.subSlider{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 0 4px rgb(225, 224, 224);
+    margin-bottom: 60px;
+    >div{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        >a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #333;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+}
+div.new{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    >div{
+        width: 30%;
+        position: relative;
+        >button{
+            width: 100px;
+            height: 45px;
+            font-size: 16px;
+            font-weight: 550;
+            border: 1px solid rgb(51, 51, 51);
+            border-radius: 25px;
+            background-color: transparent;
+            position: absolute;
+            right: 60px;
+            &:hover{
+                color: rgb(51, 51, 51);
+                border: 1px solid rgb(51, 51, 51);
+                background-color: rgba(51, 51, 51, 0.04);
+            }
+        }
+    }
+    div.what{
+        display: flex;
+        justify-content: center;
+        >h2{
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(51, 51, 51);
+        }
+    }
+}
+div.inspiring{
+    height: 350px;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    >div{
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+    }
+    div.big{
+        position: relative;
+        width: 49%;
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+        >img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius:6px;
+        }
+        >button{
+            z-index: 9;
+            position: absolute;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.088);
+            letter-spacing: 0.3px;
+            line-height: 1.7;
+            padding: 10px 30px;
+            border-radius: 25px;
+            backdrop-filter: blur(30px);
+            color: white;
+            width: 230px;
+            height: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: none;
+            border: none;
+            text-transform: uppercase;
+            &:hover{
+                opacity: 0.8;
+                background-color: rgba(255, 255, 255, 0.088);
+                transition: 200ms;
+            }
+        }
+    }
+    div.small{
+        width: 49%;
+        display: flex;
+        justify-content: space-around;
+        >div{
+            width: 32%;
+            height: 100%;
+            display: inline-block;
+            position: relative;
+            >img{
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                    border-radius: 6px;
+                    background-color:#f4f4f4;
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: 600ms;
+                    }
+            }
+            >div.box{
+                width: 56px;
+                height: 25px;
+                border-radius: 5px !important;
+                border: none;
+                background-color: rgb(85, 85, 85);
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >span{
+                    color: white;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+            div.box-1{
+                width: 120px;
+                height: 25px;
+                border-radius: 5px !important;
+                border: none;
+                background-color: rgb(85, 85, 85);
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >span{
+                    color: white;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+            >div.sabad{
+                position: absolute;
+                display: flex;
+                bottom: 130px;
+                right: 7px;
+                width: 50px;
+                height: 50px;
+                box-shadow: 1px 1px 1px 1px rgb(176, 176, 176);
+                border-radius: 25px 25px 25px 25px;
+                background-color: white;
+                >svg{
+                width: 30px;
+                height: 30px;
+                fill: white;
+                stroke: rgb(51, 51, 51);
+                font-size: 2.7rem;
+                margin-left: 9px;
+                margin-top: 7px;
+                &:hover{
+                    fill: rgb(51, 51, 51);
+                }
+            }
+            }
+            >span{
+                color: rgb(51, 51, 51);
+                position: absolute;
+                bottom: 110px;
+                left: 30px;
+                font-weight: 500;
+            }
+            h5{
+                margin-top: 8px;
+                color: rgb(85, 85, 85);
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+            p{
+                margin-top: 8px;
+                color: rgb(85, 85, 85);
+                text-transform: capitalize;
+            }
+            >div.price{
+                position: absolute;
+                bottom: 20px;
+                left: 5px;
+                color: rgb(85, 85, 85);
+                font-weight: 600;
+                font-size: 14px;
+                &::after{
+                    color: rgb(153, 153, 153);
+                    font-weight: 400;
+                    content: "     £12.00";
+                    text-decoration: line-through;
+                }
+            }
+            div.rate{
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 2px;
+                display: flex;
+                flex-direction: row;
+                >div{
+                width: 15px;
+                height: 15px;
+                overflow: hidden;
+                >svg{
+                    fill: rgb(195, 195, 195) !important;
+                }
+                >span{
+                    font-size: 8px;
+                    font-weight: 600;
+                    color: rgb(85, 85, 85);
+                }
+                }
+            }
+            div.colors{
+                width: 80px;
+                height: 18px;
+                position: absolute;
+                bottom: 2px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                >div{
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                }
+                >div.cream{
+                    background-color: rgb(223, 183, 154);
+                }
+                >div.purple{
+                    background-color:rgb(171, 176, 218);
+                }
+                >div.blue{
+                    background-color: rgb(104, 157, 209);
+                }
+                >div.pink{
+                    background-color: rgb(221, 47, 134);
+                }
+            }
+        }
+    }
+}

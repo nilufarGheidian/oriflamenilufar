@@ -1,0 +1,58 @@
+div.video{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    >div{
+        height: 455px;
+        margin: 0 auto;
+        overflow: hidden;
+        >video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-fit: contain;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+    }
+    >button{
+        overflow: hidden;
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0px;
+        margin: 30px 0px 0px;
+        cursor: pointer;
+        user-select: none;
+        vertical-align: middle;
+        appearance: none;
+        text-decoration: none;
+        font-family: SansOri, SansOriFallback, sans-serif;
+        text-transform: uppercase;
+        min-width: 64px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        box-shadow: none;
+        color: rgb(51, 51, 51);
+        border: 1px solid rgb(51, 51, 51);
+        border-radius: 25px;
+        line-height: 1.35;
+        padding: 12px 23px;
+        align-self: center;
+        font-size: 10px;
+        font-weight: bold;
+        height: 45px;
+        width: 266px;
+        &:hover{
+            background-color: rgb(216, 216, 216);
+        }
+    }
+}
